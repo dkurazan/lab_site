@@ -4,7 +4,7 @@
 
 .header{
     background-color: #1d2126;
-
+    position: sticky;
 }
 
 .container{
@@ -260,14 +260,14 @@ main{
         max-width: 425px;
     }
 
-    .col-sm-2{
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
+    .col-sm-12{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
-    .col-sm-7{
-        flex: 0 0 66.667%;
-        max-width: 66.667%;
+    .col-sm-12{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
     .slider__info{ 
@@ -289,13 +289,5 @@ main{
         max-width: 320px;
     }
 
-    .col-sm-2{
-        flex: 0 0 40%;
-        max-width: 40%;
-    }
-
-    .col-sm-7{
-        flex: 0 0 60%;
-        max-width: 60%;
-    }
+    
 }
