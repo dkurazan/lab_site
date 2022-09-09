@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-main{
-    height: 200vh;
-}
-
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -111,7 +107,9 @@ body{
     position: relative;
     height: 100% ; 
     z-index: 20;   
-    padding: 225px 0 250px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .slider__info h1{
@@ -165,6 +163,128 @@ body{
     transition-duration: .5s;
 }
 
+/* main */
+/* about */
+.about{
+    padding: 80px 0 100px;
+    border-bottom: 1px solid #dde1e4;
+}
+
+.about__info{
+    padding-bottom: 50px;
+}
+
+.title{
+    font-size: 34px;
+    font-family: 'Quattrocento Sans' , sans-serif;
+    color: rgb(41, 47, 54);
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    line-height: 39px;
+    padding-bottom: 61px;
+}
+
+.title::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 35px;
+    background-color: #e1e6ea;
+    margin-right: 15px;
+}
+
+.about__subtitle{
+    padding-bottom: 55px;
+}
+
+.about__subtitle p{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(141, 143, 146);
+}
+
+.about__subtitle p:first-child{
+    padding-bottom: 43px;
+}
+
+.about__links{
+    display: flex;
+    margin-left: -1px;
+}
+
+.about__links a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #c8cdd0;
+    margin-left: 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about__links a:hover{
+    background-color: #d0d5d9;
+}
+
+.about__facebook {
+    margin-left: 0;
+    background: url(img/big-facebook.png);
+    
+}
+
+.about__twitter{
+    background: url(img/big-twitter.png);
+}
+
+.about__google{
+    background: url(img/Google.png);
+}
+
+.about__basketball{
+    background: url(img/Ball.png);
+}
+
+.about__behance{
+    background: url(img/big-be.png);
+}
+
+.about__description{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+.about__description:last-child{
+    padding-bottom: 0;
+}
+
+.about__description-number{
+    min-width: 50px;
+    height: 50px;
+    background-color: #23b7a4;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    margin-right: 20px;
+}
+
+.about__description-info h4{
+    font-size: 18px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: rgb(41, 47, 54);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about__description-info p{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(141, 143, 146);
+    line-height: 1.5;
+}
+
+
 /* tablet */
 @media(min-width:768px){
     .container{
@@ -178,6 +298,12 @@ body{
 
     .header__menu{
         overflow-x: visible;
+    }
+
+
+    .title{
+        font-size: 36px;
+        line-height: 36px;
     }
 }
 
@@ -212,6 +338,11 @@ body{
     .col-md-3{
         flex: 0 0 25%;
         max-width: 25%;
+    }
+
+    .col-md-5{
+        flex: 0 0 41.667%;
+        max-width: 41.667%;
     }
     
     .col-md-7{
@@ -289,6 +420,12 @@ body{
         padding: 0;
         border: none;
         cursor: pointer;
+    }
+
+    /* about */
+    .row__about{
+        display: flex;
+        flex-direction: row;
     }
 }
 
