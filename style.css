@@ -426,8 +426,8 @@ body{
 
 .work__card-inner:hover{
     cursor: pointer;
-    background-color: black;
     transition-duration: .5s;
+    
 }
 
 .work__card-inner:hover .work__bc-plus ,.work__card-inner:hover .work__card-description{
@@ -436,7 +436,7 @@ body{
     transition-duration: .5s;
 }
 .work__card-inner:hover .work__img{
-    opacity: .5;
+    filter: brightness(0.5);
     transition-duration: .5s;
 }
 
