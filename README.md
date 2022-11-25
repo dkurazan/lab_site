@@ -1,3 +1,3 @@
 # blog-project
 
-link: https://dkurazan.github.io/blog-project/
+link: https://dkurazan.github.io/lab_site/
