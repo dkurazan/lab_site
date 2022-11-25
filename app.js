@@ -2,7 +2,8 @@
 
 let mobileMenu = document.querySelector(".nav-mobile-menu");
 let mainMenu = document.querySelector(".navigation");
-let overlay = document.querySelector(".overlay")
+let overlay = document.querySelector(".overlay");
+let headerMenu = document.querySelectorAll(".header__menu li");
 
 mobileMenu.addEventListener("click", () => {
     mobileMenu.classList.toggle("active-menu");
@@ -19,4 +20,12 @@ overlay.addEventListener("click", () => {
     mobileMenu.classList.remove("active-menu");
     mainMenu.classList.remove("active-menu");
     document.body.style.overflow = "visible";
+})
+
+headerMenu.forEach( item => {
+    item.addEventListener("click", () => {
+        mainMenu.classList.remove("active-menu");
+        mobileMenu.classList.remove("active-menu");
+        document.body.style.overflow = "visible";
+    })
 })
